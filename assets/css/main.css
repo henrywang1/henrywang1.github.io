@@ -8446,7 +8446,7 @@ body.is-preload .items.onload-fade-in>*>.inner {
 
 #wrapper>.invert h1,
 #wrapper>.invert h2,
-#wrapper>.invert h3,
+/* #wrapper>.invert h3, */
 #wrapper>.invert h4,
 #wrapper>.invert h5,
 #wrapper>.invert h6 {
@@ -8775,16 +8775,35 @@ body.is-preload .items.onload-fade-in>*>.inner {
 	box-shadow: none !important;
 }
 
-.myicon:hover {
-	opacity: 0.75;
+.icon_container {
+	width: 70%;
+	text-align: center;
+	margin: auto;
 }
 
-.myicon h3 {
-	color: inherit;
-	margin-block-start: 0.5em;
-}
-
-.myicon {
+/*  a tag */
+.myicon_link {
 	text-decoration: none;
+	margin: auto;
 	display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.icon_container.myicon_link {
+	color: white;
+}
+
+.icon_container h3 {
+	color: white;
+}
+
+.icon_container:hover h3 {
+	color: #47D3E5;
+	transition: 0.2s;
+}
+
+.icon_container:hover img {
+	opacity: 0.75;
+	transition: 0.2s;
 }
